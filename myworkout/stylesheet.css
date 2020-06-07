@@ -1,0 +1,296 @@
+
+/*preloader*/
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+/*.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('img/loader.gif') center no-repeat #fff;
+}*/
+
+/*.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}*/
+
+	/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		/*.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }*/
+
+		#loading {
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #fff url('img/loader.gif') no-repeat center center;
+z-index: 9999;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+.banner{
+	clip-path: polygon(100% 0, 100% 49%, 67% 100%, 0 100%, 0 0);
+	position: relative;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main-pic{
+	background-image: url("img/banner 11.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gallry-padding{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*accordion*/
+.faq-div{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 0;
+  margin:0;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1.5em 1.5em;
+  background: #3F51B5;
+  color: white;
+  cursor: pointer;
+  font-size: .7em;
+  letter-spacing: .1em;
+  transition: all .3s;
+ /* text-transform: uppercase;*/
+}
+
+/*.accordion__item {
+    border-bottom: 1px solid #3a4ba4;
+}*/
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background-color: #2D3D99;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #fcfcfc;
+  color: #353535;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 10px;
+  font-size: .85em;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "";
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: #2D3D99;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
+
+/*about us*/
+.about-card{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.about-back-img{
+	background-image: url("img/banner 8.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.about-card{
+	border-radius: 50%;
+	color: white;
+}
+.about-card-inner{
+	width:300px;
+	background-color: rgba(72, 77, 99, 0.5);
+	border:1px solid gray;
+}
+
+/*conatct us*/
+.contact-div{
+	padding-top: 10px;
+}
+.wtsapp-contact-div{
+  text-align: center;
+  font-size: 80px;
+  background-color: #32ff7e;
+
+}
+#whatsapp-contact{
+  color: white;
+  transition: 0.1s;
+}
+
+.wtsapp-contact-div:hover #whatsapp-contact{
+  color: black;
+}
+.fb-contact-div{
+  text-align: center;
+  font-size: 80px;
+  background-color: #34ace0;
+}
+
+#facebook-contact{
+color: white;
+transition: 0.1s;
+}
+
+.fb-contact-div:hover #facebook-contact{
+  color: black;
+}
+
+.gl-contact-div{
+  text-align: center;
+  font-size: 80px;
+  background-color: #ff7979;
+}
+
+#google-contact{
+  color: white;
+  transition: 0.1s;
+}
+
+.gl-contact-div:hover #google-contact{
+  color: black;
+}
+
+.cl-contact-div{
+   text-align: center;
+  font-size: 80px;
+  background-color: #81ecec;
+
+}
+
+#call-contact{
+  color: white;
+    transition: 0.1s;
+}
+
+.cl-contact-div:hover #call-contact{
+  color: black;
+}
+
+.contact-icon{
+  padding-bottom: 20px;
+}
+
+/*----------------counter--------------------*/
+.mycard{
+  padding: 16px;
+  cursor: pointer;  
+}
+
+.card-border{
+  border: 10px solid #f5f6fa;
+}
+
+.mycard:hover{
+  background-color: #ecf0f1;
+}
+
+.mycard-color-1{
+  background-color: #dcdde1;
+}
+
+.mycard-color-2{
+  background-color: #f5f6fa;
+}
+
+.card-icon-size{
+  font-size: 45px;
+}
+
+/*footer*/
+.footer-text-color{
+	color: black;
+}
+
+.footer-text-color:hover{
+	color: white;
+}
+
+.footer{
+background-color: #95a5a6;
+  background: linear-gradient(330deg, #dfe6e9 55%, #95a5a6 0%)
+
+}
+
+
