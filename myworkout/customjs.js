@@ -1,26 +1,9 @@
-//paste this code under the head tag or in a separate js file.
-  // Wait for window load
-  // $(window).load(function() {
-  //   // Animate loader off screen
-  //   $(".se-pre-con").fadeOut("slow");
-  // });
-
- 
-// $(window).load(function() {
-//     $(".loader").fadeOut("slow");
-// });
-
-// Wait for window load
-    // $(window).load(function() {
-      // Animate loader off screen
-    //   $("#loader").animate({
-    //     top: -200
-    //   }, 1500);
-    // });
 
     jQuery(document).ready(function() {
-    jQuery('#loading').fadeOut(1000);
+    jQuery('#loading').fadeOut(2000);
 });
+
+
 
 	var accordion = (function(){
   
