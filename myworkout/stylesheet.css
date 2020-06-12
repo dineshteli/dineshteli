@@ -19,7 +19,7 @@ left: 0;
 
 
 img {
-  background: url('loading.gif') no-repeat;
+  background: url('loader.gif') no-repeat;
 }
 
 .banner{
@@ -280,13 +280,14 @@ transition: 0.1s;
 }
 
 .footer-text-color:hover{
-	color: white;
+	text-decoration: underline;
+  color: black;
 }
 
 .footer{
 background-color: #95a5a6;
   background: linear-gradient(330deg, #dfe6e9 55%, #95a5a6 0%)
-
 }
+
 
 

@@ -1,10 +1,31 @@
 
+
+    // display loading gif while load
     jQuery(document).ready(function() {
     jQuery('#loading').fadeOut(2000);
 });
 
+    $(document).ready(function(){
+      $('.mygallery').magnificPopup({
+        type:'image',
+        delegate: 'a',
+        gallery : {
+          enabled:true
+        }
+      });
+    });
+
+    // nav-bar collapsed toggler
+    $(document).ready(function(){
+      $(".nav-link").click(function(){
+        $(".navbar-toggler").click();
+      });
+    });
 
 
+
+
+// accordion
 	var accordion = (function(){
   
   var $accordion = $('.js-accordion');
