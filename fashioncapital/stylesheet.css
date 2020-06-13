@@ -214,22 +214,6 @@ html{
 }
 
 /*---------------------------------------------------------------go to top btn----------------------------------*/
-/*.backtop {
-    position: fixed;
-    right: 30px;
-    top: 150px;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-
-  color: rgba(49,79,96,.84);
-  font-size: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 999999;
-    opacity: 1;
-    display: none;
-  }*/
 
   .gototop{
     position: fixed;
@@ -245,10 +229,11 @@ html{
     z-index: 999999;
     opacity: 1;
   }
+
   .gotobottom{
     position: fixed;
     right: 20px;
-    top: 350px;
+    top: 300px;
     overflow: hidden;
     color: #fff;
     text-align: center;
@@ -299,11 +284,11 @@ html{
   }
 
  .main-btn{
-  border-radius: 50%;
   height: 50px;
   width: 50px;
-  transition: 0.3s;
   background-color: #b2bec3;
+  border-radius: 50%;
+  transition: 0.3s;
  }
 
  .wtsapp-btn , .google-btn , .fb-btn{
