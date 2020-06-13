@@ -34,6 +34,14 @@
   background-repeat: no-repeat;
 }
 
+.parallex1{
+  background-image: url("img/paralox.jpg");
+}
+
+.parallex2{
+  background-image: url("img/shoew street.jpg");
+}
+
 /*----------------------------------------------accordion-------------------------------------------*/
 .faq-div{
   font-weight: bold;
@@ -255,15 +263,6 @@
 
  .float-btn-div:hover .main-btn{
   background-color: #b2bec3;
-}
-
-.rotat-on-hover{
-  transition: 0.3s;
-}
-
- .float-btn-div:hover .rotat-on-hover{
-  transform: rotate(45deg);
-  color: red;
 }
 
  .wtsapp-btn , .google-btn , .fb-btn{
