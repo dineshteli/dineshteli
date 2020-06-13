@@ -34,7 +34,7 @@
 </head>
 <style type="text/css">
 </style>
-<body class="container-fluid">
+<body>
 
         <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -275,15 +275,15 @@
 
 <div class="float-btn-div">
 <div class="content">
-    <div><button type="button" class="fb-btn" style="outline-style: none;outline: none;"><i class="fab fa-facebook-f"></i></button></div>
+    <div><div class="fb-btn"><i class="fab fa-facebook-f"></i></div></div>
     <p></p>  
-    <div><button type="button" class="google-btn" style="outline-style: none;outline: none;"><i class="far fa-envelope"></i></button></div>
+    <div><div class="google-btn"><i class="far fa-envelope"></i></div></div>
     <p></p>        
-    <div><button type="button" class="wtsapp-btn" style="outline-style: none;outline: none;"><i class="fab fa-whatsapp"></i></button></div>
+    <div><div class="wtsapp-btn"><i class="fab fa-whatsapp"></i></div></div>
     <p></p> 
 </div>    
     
-    <button type="button" class="main-btn" style="outline-style: none;outline: none;"><i class="fas fa-plus"></i></button>    
+    <div type="button" class="main-btn d-flex justify-content-center align-items-center"><i class="fas fa-plus"></i></div>    
 </div>
 
   <br>
@@ -374,10 +374,8 @@
         </div>
     </div>
 
-	<div class="backtop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></i></div>
-
-	<!-- <div class="backdowm" onclick="topFunction()" id="myBtndm" title="Go to down"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></i></div> -->
-
+	 <a href="#gototopid" onclick="topFunction()"><i class="fa fa-chevron-circle-up gototop" aria-hidden="true"></i></a>
+     <a href="#gotobottomid" onclick="bottomFunction()"><i class="fa fa-chevron-circle-down gotobottom" aria-hidden="true"></i></a>
 
 		<div class="copyright text-center">
       <footer>&copy; copyright 2020 DineshTeli</footer>

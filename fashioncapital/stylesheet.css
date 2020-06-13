@@ -12,6 +12,10 @@ html , body{
   width: 50px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 /*--------------------------------------------------------nav bar -------------------------------------------------*/
 
@@ -159,10 +163,6 @@ html , body{
   background-color: #f5f6fa;
 }
 
-.card-icon-size{
-  font-size: 45px;
-}
-
         
 /*------------------------------------------------------footer----------------------------------------*/
 .myfooter{
@@ -214,15 +214,14 @@ html , body{
 }
 
 /*---------------------------------------------------------------go to top btn----------------------------------*/
-.backtop {
+/*.backtop {
     position: fixed;
     right: 30px;
     top: 150px;
     overflow: hidden;
     color: #fff;
     text-align: center;
-/*    background-color: rgba(49,79,96,.84);*/
-  /*  padding: 10px 10px 10px 10px;*/
+
   color: rgba(49,79,96,.84);
   font-size: 40px;
     border-radius: 50%;
@@ -230,14 +229,44 @@ html , body{
     z-index: 999999;
     opacity: 1;
     display: none;
+  }*/
+
+  .gototop{
+    position: fixed;
+    right: 20px;
+    top: 200px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    color: rgba(49,79,96,.84);
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999999;
+    opacity: 1;
   }
+  .gotobottom{
+    position: fixed;
+    right: 20px;
+    top: 350px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    color: rgba(49,79,96,.84);
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999999;
+    opacity: 1;
+  }
+
  /* --------------------------------------------------------my floating button-------------------------------------*/
 
 
  .float-btn-div{
   position: fixed;
-  bottom: 6%;
-  right: 2%;
+  bottom: 20px;
+  right: 15px;
   height: auto;
   width: auto;
   z-index: 999999;
@@ -247,18 +276,26 @@ html , body{
 
   .float-btn-div:hover .wtsapp-btn{
     display: block;
-    background-color: #4cd137;  
-
+    background-color: #4cd137;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
    .float-btn-div:hover .google-btn{
     display: block;
     background-color: #ff6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .float-btn-div:hover .fb-btn{
     display: block;
     background-color: #4b7bec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
  .main-btn{
@@ -266,11 +303,8 @@ html , body{
   height: 50px;
   width: 50px;
   transition: 0.3s;
- }
-
- .float-btn-div:hover .main-btn{
   background-color: #b2bec3;
-}
+ }
 
  .wtsapp-btn , .google-btn , .fb-btn{
   border-style: none;

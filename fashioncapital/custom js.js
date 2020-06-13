@@ -1,33 +1,14 @@
 // *********************************************** code for go to top btn ********************************************* -->
 
-//Get the button
-// var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-     $('#myBtn').fadeIn();
-  } else {
-    $('#myBtn').fadeOut();
-  }
-}
-
-// $(window).scroll(function() {
-//     var height = $(window).scrollTop();
-//     if (height > 50) {
-//         $('#myBtn').fadeIn();
-//     } else {
-//         $('#myBtn').fadeOut();
-//     }
-// });
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
-  // document.body.scrollTop = 0;
-  // document.documentElement.scrollTop = 0;
+}
+
+// When the user clicks on the button, scroll to the bottom of the document
+function bottomFunction() {
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 }
 
 
