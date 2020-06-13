@@ -218,7 +218,7 @@ html{
   .gototop{
     position: fixed;
     right: 20px;
-    top: 200px;
+    top: 20%;
     overflow: hidden;
     color: #fff;
     text-align: center;
@@ -233,7 +233,7 @@ html{
   .gotobottom{
     position: fixed;
     right: 20px;
-    top: 300px;
+    top: 40%;
     overflow: hidden;
     color: #fff;
     text-align: center;
