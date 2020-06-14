@@ -215,7 +215,7 @@ html{
 
 /*---------------------------------------------------------------go to top btn----------------------------------*/
 
-  .gototop{
+ /* .gototop{
     position: fixed;
     right: 20px;
     top: 20%;
@@ -242,6 +242,43 @@ html{
     border-radius: 50%;
     cursor: pointer;
     z-index: 999999;
+    opacity: 1;
+  }*/
+
+  .backtop {
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    outline: none;
+    overflow: hidden;
+    
+    text-align: center;
+    color: rgba(49,79,96,.84);
+    height: 36px;
+    width: 50px;
+    line-height: 36px;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 999999;
+     font-size: 40px;
+    opacity: 1;
+  }
+
+    .backbottom {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    color: rgba(49,79,96,.84);
+    height: 36px;
+    width: 50px;
+    line-height: 36px;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 999999;
+     font-size: 40px;
     opacity: 1;
   }
 

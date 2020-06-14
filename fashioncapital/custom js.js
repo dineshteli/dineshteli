@@ -1,16 +1,6 @@
 // *********************************************** code for go to top btn ********************************************* -->
 
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-}
-
-// When the user clicks on the button, scroll to the bottom of the document
-function bottomFunction() {
-  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-}
-
 
 //<!-- -----------------------------------------------float btn--------------------------------------- -->
 
