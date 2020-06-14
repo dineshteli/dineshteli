@@ -288,6 +288,9 @@ html{
   width: 50px;
   background-color: #b2bec3;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.3s;
  }
 
