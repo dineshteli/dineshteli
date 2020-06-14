@@ -247,7 +247,6 @@ html{
 
  /* --------------------------------------------------------my floating button-------------------------------------*/
 
-
  .float-btn-div{
   position: fixed;
   bottom: 20px;
@@ -257,31 +256,12 @@ html{
   z-index: 999999;
   overflow: auto;
   transition:height 0.3s;
+
  }
-
-  .float-btn-div:hover .wtsapp-btn{
-    display: block;
-    background-color: #4cd137;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-   .float-btn-div:hover .google-btn{
-    display: block;
-    background-color: #ff6b6b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .float-btn-div:hover .fb-btn{
-    display: block;
-    background-color: #4b7bec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#content{
+   animation: mymove 3s 1;
+  animation-delay: 2s;
+}
 
  .main-btn{
   height: 50px;
@@ -292,7 +272,29 @@ html{
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  border-style: none;
+
  }
+
+
+ .wtsapp-btn{
+    
+    background-color: #4cd137;
+
+   
+  }
+
+   .google-btn{
+    
+    background-color: #ff6b6b;
+   
+  }
+
+   .fb-btn{
+    
+    background-color: #4b7bec;
+   
+  }
 
  .wtsapp-btn , .google-btn , .fb-btn{
   border-style: none;
@@ -303,11 +305,20 @@ html{
   transition: 0.2s
   color:black;
   font-size: 30px;
-  display: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
  }
 
+
+ @keyframes mymove {
+  from {display: : block;}
+  to {display: : none;}
+}
+
  .wtsapp-btn:hover , .google-btn:hover , .fb-btn:hover{
-  background: #b2bec3;
   color: white;
  }
 

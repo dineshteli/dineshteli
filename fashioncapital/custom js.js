@@ -14,11 +14,15 @@ function bottomFunction() {
 
 //<!-- -----------------------------------------------float btn--------------------------------------- -->
 
-$(document).ready(function(){
-  $(".main-btn").click(function(){
-    $(".content").toggle();
-  });
-});
+
+function myFunction() {
+  var x = document.getElementById("content");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 //<!-- -------------------------------------- multi slider------------------------------------ -->
 
