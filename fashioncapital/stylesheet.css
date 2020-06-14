@@ -258,10 +258,11 @@ html{
   transition:height 0.3s;
 
  }
-#content{
-   animation: mymove 3s 1;
-  animation-delay: 2s;
-}
+
+ #content{
+  display: block;
+
+ }
 
  .main-btn{
   height: 50px;
@@ -273,7 +274,6 @@ html{
   align-items: center;
   transition: 0.3s;
   border-style: none;
-
  }
 
 
@@ -309,14 +309,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
- 
  }
-
-
- @keyframes mymove {
-  from {display: : block;}
-  to {display: : none;}
-}
 
  .wtsapp-btn:hover , .google-btn:hover , .fb-btn:hover{
   color: white;
