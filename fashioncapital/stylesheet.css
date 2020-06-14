@@ -246,21 +246,17 @@ html{
   }*/
 
   .backtop {
-    position: fixed;
+     position: fixed;
     right: 20px;
-    top: 30%;
-    outline: none;
+    top: 20%;
     overflow: hidden;
-    
+    color: #fff;
     text-align: center;
     color: rgba(49,79,96,.84);
-    height: 36px;
-    width: 50px;
-    line-height: 36px;
-    border-radius: 2px;
+    font-size: 40px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 999999;
-     font-size: 40px;
     opacity: 1;
   }
 
@@ -268,17 +264,14 @@ html{
     position: fixed;
     right: 20px;
     top: 40%;
-    outline: none;
     overflow: hidden;
+    color: #fff;
     text-align: center;
     color: rgba(49,79,96,.84);
-    height: 36px;
-    width: 50px;
-    line-height: 36px;
-    border-radius: 2px;
+    font-size: 40px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 999999;
-     font-size: 40px;
     opacity: 1;
   }
 
