@@ -38,6 +38,7 @@ left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 }
+
 .type{
 	color: red;
 }
@@ -178,6 +179,19 @@ left: 0;
 }
 .footer-social-icon:hover{
 	color: black;
+}
+
+.wtsapp-options-text{
+	color: black;
+}
+
+.wtsapp-options-text:hover{
+	color: white;
+}
+.wtsapp-options:hover{
+	background-color: #0984e3;
+
+
 }
 
 /*----------------copyright----------------------*/
