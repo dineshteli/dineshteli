@@ -3,6 +3,16 @@
 	margin: 0px;
 }
 
+
+#loading {
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #fff url('img/Loading-V3.gif') no-repeat center center;
+z-index: 9999;
+left: 0;
+}
+
   /*---------------------------------------------- go to top button----------------------------------------------------*/
 
   .backtop {
@@ -28,10 +38,14 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 }
+.type{
+	color: red;
+}
 /*-----------------top banner--------------------*/
 
 .banner{
 	background: linear-gradient(rgba(12, 167, 255, 0.2),rgba(12, 167, 255, 0.2)),url("img/street-light.gif");
+	clip-path: polygon(100% 75%, 50% 100%, 0 75%, 0 0, 100% 0);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -64,7 +78,7 @@
 	background-color: rgba(35, 124, 216, 0.5);
 	transition: 0.3s;
 	color: white;
-	padding: 10px 25px;
+	padding: 10px 30px;
 	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	font-size: 1.2rem;
 }
@@ -77,7 +91,7 @@
 
 
 .bannertxt{
-	padding: 20px 0;
+	padding-bottom: 20px;
 	color: white;
 	text-align: center;
 }
@@ -90,13 +104,28 @@
 
 .demo-web-name{
 	font-size: 1.2rem;
-	color: black;
+	color: white;
 }
 
 /*--------------lang slider------------*/
 .lang-slider-pic{
 	height: auto;
 	width: 50%;
+}
+
+/*-----------------------about-banner----------------------*/
+.about-banner{
+	background-image: url("img/keyboard.jpg");
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.about-content{
+	padding: 30px 0;
 }
 
 /*--------------corona banner------------------*/
@@ -187,5 +216,13 @@
       -webkit-align-items: center;
       align-items: center;
     }
+
+
+/******************************************************/
+.section-title{
+	padding: 40px 0;
+	color: #0984e3;
+	/*border-bottom: 1px solid #dfe6e9;*/
+}
 
 
