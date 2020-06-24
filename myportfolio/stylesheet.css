@@ -41,6 +41,14 @@ left: 0;
 .type{
 	color: red;
 }
+
+.header-wtsapp{
+	color: #4cd137;
+}
+
+.header-call{
+	color: #7f8fa6;
+}
 /*-----------------top banner--------------------*/
 
 .banner{
