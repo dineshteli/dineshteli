@@ -202,7 +202,7 @@ padding-bottom: 5px;
 
 /*conatct us*/
 .contact-div{
-	padding-top: 10px;
+	padding-top: 30px;
 }
 .wtsapp-contact-div{
   text-align: center;
@@ -276,17 +276,17 @@ transition: 0.1s;
 
 /*footer*/
 .footer-text-color{
-	color: black;
+	color: white;
 }
 
 .footer-text-color:hover{
 	text-decoration: underline;
-  color: black;
+  	color: white;
 }
 
 .footer{
-background-color: #95a5a6;
-  background: linear-gradient(330deg, #dfe6e9 55%, #95a5a6 0%)
+background-color: #2d3436;
+  /*background: linear-gradient(330deg, #2d3436 55%, #95a5a6 0%)*/
 }
 
 
