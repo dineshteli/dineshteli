@@ -33,11 +33,18 @@ left: 0;
 	flex-flow: column;
 }
 
-
  .services-logo{
 	padding: 2% 0 2% 0;
 	text-align: center;
+}
 
+.service-back-color{
+	background-color: #ecf0f1;
+}
+
+.contact-back-color{
+	background-color: #dcdde1;
+	padding-bottom: 3%;
 }
 
 .services-backImg{
@@ -52,7 +59,6 @@ left: 0;
 .vert{
 	padding: 20% 0 20% 0;
 	text-align: center;
-
 }
 
 .footer{

@@ -20,23 +20,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-	<script type="text/javascript">
-		// code for navbar color change on scroll
-
-			    window.addEventListener('DOMContentLoaded', (event) => {
-			        jQuery('.navbar-color').css("background-color", "rgba(5, 5, 5, 0.1)");
-
-			        jQuery(window).scroll(function() {
-			            if (jQuery(window).scrollTop() > 0) {
-			                jQuery('.navbar-color').css("background-color", "#000");              
-			            }
-
-			             else {
-			                jQuery('.navbar-color').css("background-color", "rgba(5, 5, 5, 0.1)");
-			            }
-			        });
-			    }); 
-	</script>
+	
 			
 </head>
 
@@ -52,7 +36,7 @@
 				  <div class="ml-auto text-white">
 				  	
 				  	<span>
-				  		call us: +91 8108485581
+				  		call: +91 8108485581
 				  	</span>
 				  	 
 				  </div>
@@ -79,14 +63,18 @@
 			    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
 			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
 			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
+
+			  <div class="p-2 text-center">
+			  	<button type="submit" class="btn btn-primary">Submit</button>
+			  </div>
+			  
 			</form>
 		</div>
 	</section>
 
 
 	<section>
-		<div class="container-fluid" style="background-color: #ecf0f1">
+		<div class="container-fluid service-back-color">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-5 text-center">
 					<h1>Our Services</h1>
@@ -203,7 +191,7 @@
 	</section>
 
 	<section>
-		<div class="container-fluid" style="background-color: #dcdde1; padding: 0 0 3% 0;">
+		<div class="container-fluid contact-back-color">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-5 text-center">
 					<h1>contact us</h1>
@@ -244,7 +232,7 @@
 	    				  <div class="invalid-feedback">Please fill out this field.</div>
 							</div>
 
-							<div class="text-center">
+							<div class="text-center p-3">
 								<button id="submitbtn" type="submit" class="btn btn-primary">Submit</button>
 							</div>
 							
@@ -352,40 +340,14 @@
 
 	
 
-	 <!-- bs4 js link -->
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-	 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-	<!-- <script src="customjs.js"></script> -->
+	<script src="customjs.js"></script>
 
 	<!-- font awsome link -->
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-
-
-
-	 <script type="text/javascript">
-	 	 // display loading gif while load
-			    jQuery(document).ready(function() {
-			    jQuery('#loading').fadeOut(2000);
-			});
-	 </script>
-
-	 <script type="text/javascript">
-	 	// js code fpr mobile number validation
-
-			    
-				function isNumber(evt) {
-				        evt = (evt) ? evt : window.event;
-				        var charCode = (evt.which) ? evt.which : evt.keyCode;
-				        if ( (charCode > 31 && charCode < 48) || charCode > 57) {
-				            return false;
-				        }
-				        return true;
-				    }
-	 </script>
 
 
 </body>
