@@ -12,13 +12,12 @@
 
   	<!-- crome, firefox os and opera -->
   	<meta name="theme-color" content="#74b9ff">
-
   	<!-- windows phone -->
   	<meta name="msapplication-navbutton-color" content="#74b9ff">
-
   	<!-- safari/ios -->
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- content="default" or "black" or "black-translucent"  -->
+  	
 
 	<!--stylesheet file link-->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -38,41 +37,32 @@
 	
 		<div  id="loading"></div>
 
-	
 
-	<!--navbar section start -->
-		<nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-					MyWorkout
-				</a>
-			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="navbar-toggler-icon"></span>
-			    </button>
-			    <div class="collapse navbar-collapse" id="navbarNav">
-			        <ul class="navbar-nav ml-auto">
-			            <li class="nav-item text-center" id="#home2">
-			                <a class="nav-link" href="#home">HOME</a>
-			            </li>
-			            <li class="nav-item text-center">
-			                <a class="nav-link scroll-link" href="#services">SERVICES</a>
-			            </li>
-			            <li class="nav-item text-center">
-			                <a class="nav-link scroll-link" href="#pic-gallery">GALLERY</a>
-			            </li>
-			            <li class="nav-item text-center">
-			                <a class="nav-link scroll-link" href="#about">ABOUT</a>
-			            </li>
-			            <li class="nav-item text-center">
-			                <a class="nav-link scroll-link" href="#contact">CONTACT</a>
-			            </li>
-			        </ul>
-			    </div>
-		    </div>
-		</nav>
+		<section>
+		<div class="container-fluid fixed-top navbar-light bg-light">
+			
+				<nav class="navbar navbar-expand-lg">
+					<!-- <div class="container"> -->
+						 <a class="navbar-brand" href="index.html">
+						  	<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+							MyWorkout
+					  	</a>
 
-	<div id="home" class="container-fluid banner">
+					  <div class="ml-auto">
+					  	
+					  		<a class="text-dark" href="tel:+918108485581">
+					  			+91 8108485581
+					  		</a>
+					  
+					  </div>
+					<!-- </div> -->
+				</nav>
+		</div>
+	</section>
+
+
+
+	<div class="container-fluid banner">
 		<div class="row">
 				<div class="banner-img text-center">
 					<span>
@@ -92,7 +82,7 @@
 	</div>
 
 	<!-- our services -->
-	<section id="services">
+	<section>
 		<div class="container-fluid">
 			<br>			
 				<h2 class="text-center">Our Services</h2>
@@ -167,7 +157,7 @@
 	</section>
 
 	<!-- gallery section -->
-		<section id="pic-gallery">
+		<section>
 		<div class="container-fluid" style="background-color: #f5f6fa;">
 			<br><h2 class="text-center">photo gallery</h2>
 			<hr>
@@ -204,7 +194,7 @@
 	</div>
 	</section>
 
-	<section id="about">
+	<section>
 		<div class="container-fluid">
 		<br>			
 			<h2 class="text-center">About us</h2>
@@ -368,9 +358,9 @@
     </div><br/>
 	</div>
 
-	<section id="contact">
+	<section>
 		<div class="container-fluid">
-			<h2 class="text-center">conatct us</h2>
+			<h2 class="text-center">contact us</h2>
 			<hr>
 
 			<div class="container" style="">
@@ -384,28 +374,28 @@
 						<form>
 							<div class="form-group">
 						  	<label for="usr_name">Name</label>
-						  	<input type="text" maxlength="15" class="form-control text-center" id="uname" name="uname" placeholder="your name" required>
+						  	<input type="text" autocomplete="off" maxlength="15" class="form-control text-center" id="uname" name="uname" placeholder="your name" required>
 						  	 <div class="valid-feedback">Valid.</div>
 	      					<div class="invalid-feedback">Please fill out this field.</div>
 							</div>
 
 							<div class="form-group">
 						  <label for="mobile_no">Mobile number</label>
-						  <input type="text" maxlength="10" class="form-control text-center" id="mob_no" name="mob_no" placeholder="your mobile number" required>
+						   <input type="text" onkeypress="return isNumber(event)" onpaste="return false" class="form-control text-center" id="mob_id" minlength="10" maxlength="10" autocomplete="off" placeholder="your mobile number" required>
 						   <div class="valid-feedback">Valid.</div>
 	     				 <div class="invalid-feedback">Please fill out this field.</div>
 							</div>
 
 							<div class="form-group">
 						  <label for="usr_city">your city</label>
-						  <input type="text" maxlength="20" class="form-control text-center" id="city_name" name="city_name" placeholder="your city name" required>
+						  <input type="text" autocomplete="off" maxlength="20" class="form-control text-center" id="city_name" name="city_name" placeholder="your city name" required>
 						   <div class="valid-feedback">Valid.</div>
 	    				  <div class="invalid-feedback">Please fill out this field.</div>
 							</div>
 
 							<div class="form-group">
 						  <label for="usr_name">How did you know about us</label>
-						  <input type="text" maxlength="30" class="form-control text-center" id="how_know" name="how_know" placeholder="enter reference" required>
+						  <input type="text" autocomplete="off" maxlength="30" class="form-control text-center" id="how_know" name="how_know" placeholder="enter reference" required>
 						   <div class="valid-feedback">Valid.</div>
 	    				  <div class="invalid-feedback">Please fill out this field.</div>
 							</div>
@@ -501,6 +491,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 	<script src="customjs.js"></script>
 
 	<!-- font awsome link -->
@@ -511,6 +502,19 @@
 
 	<!-- lightbox supportive file link -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+
+
+
+	<script type="text/javascript">     
+function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if ( (charCode > 31 && charCode < 48) || charCode > 57) {
+            return false;
+        }
+        return true;
+    }
+</script>
 
 </body>
 </html>
