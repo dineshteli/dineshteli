@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="img\favicon.ico">
+
+	<!--stylesheet file link-->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!-- font awsome file link -->
+	<link rel="stylesheet" type="text/css" href="fontawesome-5.12.0/css/all.css">
+
+	<!-- responsive files link -->
+	<link rel="stylesheet" type="text/css" href="bootstrap 3.3.7\css\bootstrap.min.css">
+	<script src="bootstrap 3.3.7\js\jquery.js"></script>
+	<script src="bootstrap 3.3.7\js\bootstrap.min.js"></script>
+	<script src="float-panel.js"></script>
+
+	<style>
+		.carousel-inner .active.left { left: -20%; }
+.carousel-inner .next        { left:  20%; }
+.carousel-inner .prev    { left: -20%; }
+.carousel-control        { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+	</style>
+</head>
+<body class="container-fluid">
+	<div class="row">
+		
+		<div class="col-md-12 text-center"><h3>Bootstrap 3 Multiple Slide Carousel</h3></div>
+<div class="col-md-6 col-md-offset-3">
+<div class="carousel slide" id="myCarousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-xs-3"><a href="#"><img src="img\img_avatar.png" class="img-responsive"></a></div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+
+
+
+	</div>
+
+
+
+
+
+<script>
+	$('#myCarousel').carousel({
+  interval: 4000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+</body>
+</html>

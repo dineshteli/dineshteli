@@ -1,0 +1,37 @@
+WebTech Academy
+How to submit form data in Email HTML CSS and PHP (https://www.youtube.com/watch?v=bh3X7sSBk_4)
+
+Coding Birds Online
+how to send email using PHP mail function step by step || With Source Code (https://www.youtube.com/watch?v=nxKS3Ta_hik)
+
+CodeFlix
+Send Mail using PHP (https://www.youtube.com/watch?v=RpQPlko-DsM)
+
+HSquare Learning
+https://www.youtube.com/watch?v=cLfksxDcpk4
+
+Yogendra Singh
+php how to send mail ? how to send email in php ? Complete Understanding (https://www.youtube.com/watch?v=No8gaqsFdMw)
+
+Yogendra Singh
+How to send email from HTML contact form using php mail function - Detailed Hindi Video Part-3 (https://www.youtube.com/watch?v=pFgdEgLNJLo)
+
+DCodeMania
+Send An Email On Form Submission Using PHP | Contact Form Using HTML5 & CSS3 | Part 2 (https://www.youtube.com/watch?v=hl6ebKO_EKs)
+
+Webology
+Contact Form To Send Email In PHP (https://www.youtube.com/watch?v=NBBLi-Q5O-w)
+
+OnlineITtuts Tutorials
+How to Make Contact Us Form in Php (https://www.youtube.com/watch?v=LtdE_LtLwqE)
+
+The Code Knowledge
+Send Email From Contact Form to email using Php (https://www.youtube.com/watch?v=LnC9xZq8Zts)
+
+Easy Tutorials
+Create Working Contact Form Using HTML, CSS, PHP | Contact Form Design (https://www.youtube.com/watch?v=Iv93yjdvkWI)
+
+WebStack
+Send Email in PHP with Contact Forms - Part1 (https://www.youtube.com/watch?v=KDdSi7HtiFU)
+
+

@@ -1,0 +1,183 @@
+<script type="text/javascript">
+		$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".navbar").css("background" , "blue");
+	  }
+	  else{
+		  $(".navbar").css("background" , "#333");  	
+	  }
+  })
+})
+	</script>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+<!-- Custom JS for background color on scrolling -->
+<script>
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 300){
+        $('.fixed-top').css('background', 'transparent');
+    } else{
+        $('.fixed-top').css('background', 'rgba(0, 0, 0, 0.4)');
+    }
+});
+</script>
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+	<script type="text/javascript">
+		$(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            
+             $('.navbar').css('background', '#333');
+        } else {
+           $('.navbar').css('background', 'rgba(5, 5, 5, 0.1)');
+        }
+    });
+  
+});
+	</script>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+	<script type = "text/javascript" >
+    window.addEventListener('DOMContentLoaded', (event) => {
+        jQuery('.navbar').css("background-color", "rgba(255, 255, 255, 0.2)");
+        jQuery(window).scroll(function() {
+            if (jQuery(window).scrollTop() > 0) {
+                jQuery('.navbar').css("background-color", "#000");              
+            } else {
+                jQuery('.navbar').css("background-color", "rgba(255, 255, 255, 0.2)");
+            }
+        });
+    }); 
+</script>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+var myNav = document.getElementById("nav");
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+    myNav.classList.add("scroll");
+  } else {
+    myNav.classList.remove("scroll");
+  }
+};
+body {
+  margin: 0;
+  padding: 0;
+  height: 4000px;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #111;
+  transition: all .5s ease-in-out;
+}
+.scroll {
+  background-color: transparent;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+If you are using jquery:
+
+var myNav = $("#nav");
+
+$(window).on('scroll', function() {
+  "use strict";
+  if ($(window).scrollTop() >= 280) {
+    myNav.addClass("scroll");
+  } else {
+    myNav.removeClass("scroll");
+  }
+});
+body {
+  margin: 0;
+  padding: 0;
+  height: 4000px;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #111;
+  transition: all .5s ease-in-out;
+}
+.scroll {
+  background-color: transparent;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 20){  
+  $('#navBar').css({property: "value"});
+    } else {
+        $('#navBar').css({property: "value"});
+    }
+});
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+HTML:
+
+<div id="navbar"></div>
+JavaScript:
+
+$(function() {
+ $(window).on("scroll", function() {
+    if($(window).scrollTop() > 280) {
+        //background on scroll
+        $("#navbar").addClass("scroll");
+    } else {
+        //background at top
+       $("#navbar").removeClass("scroll");
+    }
+  });
+});
+CSS:
+
+#navbar {
+background-color:#111;
+transition:all .5s ease-in-out;
+}
+.scroll {
+background-color:transparent;
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+web links
+
+
+https://stackoverflow.com/questions/46636344/navbar-to-change-colour-on-scroll-bootstrap-4
+
+https://stackoverflow.com/questions/39802412/change-navbar-color-while-scrolling
+
+https://docs.themeisle.com/article/1053-navigation-bar-color-in-zelle
+
+https://codeconvey.com/change-navbar-text-color-on-scroll/
+
+https://lukedowding.com/change-nav-bar-menu-add-css-class-scroll/
