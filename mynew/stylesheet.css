@@ -16,6 +16,9 @@ z-index: 9999;
 left: 0;
 }
 
+.navbar-color{
+  background-color: black;
+}
 
 
 .banner{
@@ -45,6 +48,10 @@ left: 0;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.footer-bg-color{
+  background-color: black;
 }
 
 
