@@ -20,6 +20,10 @@ left: 0;
   background-color: black;
 }
 
+.banner-text-color{
+  color: black;
+}
+
 
 .banner{
   /*background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("img/wordpress-website.gif");*/
