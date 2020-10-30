@@ -7,7 +7,7 @@
 
 
     ///////////////// fixed menu on scroll for desktop
-if ($(window).width() > 992) {
+
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
         $('#navbar_top').addClass("fixed-top");
@@ -21,5 +21,5 @@ if ($(window).width() > 992) {
         $('body').css('padding-top', '0');
       }   
   });
-} // end if
+ // end if
 
