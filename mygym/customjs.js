@@ -11,7 +11,7 @@ if ($(window).width() > 0) {
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
         $('#navbar_top').addClass("fixed-top");
-        $('.navbar-color').css('background-color', 'rgba(43, 52, 37, 0.7)');
+        $('.navbar-color').css('background-color', 'rgba(10, 10, 10, 0.7)');
         // add padding top to show content behind navbar
         $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
       }else{
@@ -22,4 +22,23 @@ if ($(window).width() > 0) {
       }   
   });
 } // end if
+
+
+
+//<!-- -----------------------------------------------float btn--------------------------------------- -->
+
+
+function myFunction() {
+  var x = document.getElementById("content");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+$(".main-btn").click(function () {
+    $(".rotate").toggleClass("down");
+})
 
