@@ -7,7 +7,7 @@
 
 
     ///////////////// fixed menu on scroll for desktop
-if ($(window).width() > 0) {
+if ($(window).width() > 100) {
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
         $('#navbar_top').addClass("fixed-top");
