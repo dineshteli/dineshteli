@@ -7,7 +7,7 @@
 
 
     ///////////////// fixed menu on scroll for desktop
-if ($(window).width() > 100) {
+if ($(window).width() > 0) {
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
         $('#navbar_top').addClass("fixed-top");
@@ -22,6 +22,7 @@ if ($(window).width() > 100) {
       }   
   });
 } // end if
+
 
 
 
