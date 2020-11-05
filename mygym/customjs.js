@@ -57,3 +57,9 @@ $(".main-btn").click(function () {
     $(".rotate").toggleClass("down");
 })
 
+
+
+
+$(".main-btn").click(function () {
+    $(".rotate").toggleClass("down");
+})
