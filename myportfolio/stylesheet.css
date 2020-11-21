@@ -18,7 +18,7 @@ left: 0;
   .backtop {
     position: fixed;
     left: auto;
-    right: 30px;
+    right: 20px;
     top: auto;
     bottom: 20px;
     overflow: hidden;
