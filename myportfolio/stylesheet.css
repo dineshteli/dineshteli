@@ -54,7 +54,7 @@ left: 0;
 
 .banner{
 	background: linear-gradient(rgba(12, 167, 255, 0.2),rgba(12, 167, 255, 0.2)),url("img/street-light.gif");
-	clip-path: polygon(100% 75%, 50% 100%, 0 75%, 0 0, 100% 0);
+	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
