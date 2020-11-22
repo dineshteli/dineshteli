@@ -83,19 +83,62 @@ left: 0;
 }
 
 .contactbtn{
-	text-decoration: none;
-	background-color: rgba(35, 124, 216, 0.5);
+	
 	transition: 0.3s;
-	color: white;
+	
 	padding: 10px 30px;
-	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	
 	font-size: 1.2rem;
+	border-radius: 25px;
+
+	 -webkit-animation: bgcolor 8s infinite;
+    animation: bgcolor 8s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
 
 .contactbtn:hover{
-	background-color: rgba(35, 124, 216, 0.8);
+
+	-webkit-animation: bgcolor  paused;
+
+	background-color: rgba(14, 1, 3, 0.5);;
 	color: white;
+	border: 1px solid white;
 	text-align: center;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    30% {
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+         
+    }
+
+    60% {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    90% {
+        background-color:black;
+        border: 1px solid white;
+        color: white;
+       
+    }
+
+    100% {
+        background-color:white;
+        border: 1px solid black;
+        color: black;
+    }
 }
 
 
@@ -106,15 +149,33 @@ left: 0;
 }
 
 /*-------creativity demo----------*/
-.demo-web-symbol{
-	height: auto;
-	width: 4rem;
-}
+/*.demo-div:hover{
+	background-color: white;
+	border-radius: 5px;
+}*/
 
 .demo-web-name{
-	font-size: 1.2rem;
 	color: white;
+	transition: .1s ease;
 }
+
+.demo-web-name div{
+	background-color: rgba(14, 1, 3, 0.5);
+	border-radius: 5px;
+	transition: .1s ease;
+	border: 1px solid white;
+}
+
+.demo-web-name div:hover{
+	background-color: white;
+}
+
+.demo-div:hover .demo-web-name{
+	text-decoration: none;
+	color: black;
+}
+
+
 
 /*--------------lang slider------------*/
 .lang-slider-pic{
@@ -133,10 +194,6 @@ left: 0;
 	color: white;
 }
 
-.about-content{
-	padding: 30px 0;
-}
-
 /*--------------corona banner------------------*/
 .corona-banner{
 
@@ -149,9 +206,6 @@ left: 0;
 	color: white;
 }
 
-.corona-div{
-	padding: 5rem 0;
-}
 
 .corona-banner-details{
 	font-size: 1.5rem;
@@ -249,6 +303,10 @@ left: 0;
 
 .services-text , .advantages-text{
 	font-size: 1.3rem;/*em , rem , px , % , vw*/
+}
+
+.creativity-hr{
+	background-color: white;
 }
 
 
