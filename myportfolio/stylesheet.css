@@ -247,6 +247,10 @@ left: 0;
 	/*border-bottom: 1px solid #dfe6e9;*/
 }
 
+.services-text , .advantages-text{
+	font-size: 1.3rem;/*em , rem , px , % , vw*/
+}
+
 
 
 ::-webkit-scrollbar-track
