@@ -8,13 +8,50 @@ html {
 	margin: 0px;
 }
 
+       body { 
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }
+
+
 #loading {
 position: fixed;
-width: 100%;
-height: 100vh;
-background: #fff url('img/Loading-V3.gif') no-repeat center center;
+width: 4rem;
+height: 4rem;
+
 z-index: 9999;
-left: 0;
+
+border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgba(52, 152, 219,1.0);;
+  border-bottom: 10px solid rgba(52, 152, 219,1.0);
+
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+
+   -webkit-animation: spin 1s linear infinite;
+  animation: spin 1 s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
@@ -28,9 +65,7 @@ left: 0;
 
 .context {
     width: 100%;
-    position: absolute;
-
-    
+    position: absolute;   
 }
 
 .context h1{
@@ -161,7 +196,12 @@ left: 0;
         opacity: 0;
         border-radius: 50%;
     }
+}
 
+/*about page*/
+
+.myskill{
+  background-color: #f5f6fa;
 }
 
 
@@ -178,13 +218,8 @@ left: 0;
     top: auto;
     bottom: 20px;
     overflow: hidden;
-    width: 3rem;
-    height: 3rem;
-   background-color: rgba(14, 1, 3, 0.4);
-   color: rgba(14, 1, 3, 0.9);
-    text-align: center;
+    color: rgba(14, 1, 3, 0.6);
     border: none;
-    border-radius: 50%;
     cursor: pointer;
     z-index: 999999;
     opacity: 1;
@@ -250,6 +285,12 @@ left: 0;
 	color: #7f8fa6;
 }
 
+.header-wtsapp:hover , .header-call:hover{
+ 
+  color: black;
+  border-radius: 5px;
+}
+
 .contactbtnlink a:hover{
 	text-decoration: none;
 }
@@ -296,38 +337,8 @@ left: 0;
 	text-align: center;
 }
 
-.offer-div , .advantages-div , .qualityinfo{
+.services-div , .go-online , .webdemo{
 	background-color: rgba(52, 152, 219,1.0);
-}
-
-.web-cost-div{
-	background-color: rgba(14, 1, 3, 0.5);
-	border-radius: 5px;
-	color: white;
-	transition: .2s ease;
-	border: 2px solid white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.web-cost-div:hover{
-	background-color: white;
-	color: black;
-	border: 2px solid black;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	cursor: pointer;
-}
-
-
-ul.a {
-  list-style-type: square;
-  list-style-position: inside;
-  line-height: 2rem;
- 
-}
-
-.cost-label{
-	font-size: 2rem;
-	font-weight: bold;
 }
 
 
@@ -338,8 +349,9 @@ ul.a {
 }
 
 
-.online-details{
+.quality-details , .online-details{
 	font-size: 1.5rem;
+  line-height: 2rem;
 }
 /*----------------footer----------------*/
 .footer{
@@ -422,32 +434,65 @@ ul.a {
 	font-size: 1.3rem;/*em , rem , px , % , vw*/
 }
 
-.service-icon , .webdemodiv /*.advantages-icon:hover*/{
+
+.service-icon{
+  color: white;
   border-radius: 5px;
   border: 1px solid #c8d6e5;
+  transition: 0.1s ease;
 }
 
-.service-icon:hover , .advantages-icon:hover{
+.service-icon:hover{
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.1s ease;
+}
+
+.service-icon:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.webdemodiv{
-  color: black;
-  /*position: relative;*/
+
+/*webdemo code*/
+
+.democard{
+   border-radius: 5px;
 }
 
-/*.webdemocost{
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-}*/
-
-.webdemodiv:hover{
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-  background-color: black;
+.democard:hover{
   box-shadow: 3px 3px 5px grey;
-  color: white;
 }
+
+.webdemo:hover a {
+  text-decoration: none;
+}
+
+.webname{
+  transition: 0.1s ease;
+  color: white;
+  background-color: rgba(236, 240, 241,0.2);
+}
+
+.democard:hover .webname{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.webcost{
+  transition: 0.1s ease;
+  color: white;
+  background-color: black;
+  padding: 0.3rem;
+}
+
+.democard:hover .webcost{
+  color: black;
+  background-color: white;
+}
+
 
 
 /*editing scrollbar*/
@@ -460,9 +505,16 @@ ul.a {
 
 ::-webkit-scrollbar
 {
-	width: 12px;
+	width: 8px;
 	background-color: #F5F5F5;
+  transition: 0.3s;
 }
+
+::-webkit-scrollbar:hover
+{
+  width: 11px;
+}
+
 
 ::-webkit-scrollbar-thumb
 {
