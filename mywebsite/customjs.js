@@ -5,13 +5,13 @@
                      $("nav").removeClass("navbar-light");
                       $("nav").removeClass("bg-light");
                     $("nav").addClass('navbar-dark');
-                    $("nav").addClass('bg-dark');
+                    $("nav").addClass('navbar-color-on-scroll');
                      
                   }
 
                    else {
                       $("nav").removeClass("navbar-dark");
-                      $("nav").removeClass("bg-dark");
+                      $("nav").removeClass("navbar-color-on-scroll");
                     $("nav").addClass('navbar-light');
                     $("nav").addClass('bg-light');
                       

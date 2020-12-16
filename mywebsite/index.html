@@ -10,6 +10,14 @@
 	<meta name="author" content="dinesh teli">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  	<!-- crome, firefox os and opera -->
+  	<meta name="theme-color" content="#000">
+  	<!-- windows phone -->
+  	<meta name="msapplication-navbutton-color" content="#000">
+  	<!-- safari/ios -->
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- content="default" or "black" or "black-translucent"  -->
+
 
 	<!--stylesheet file link-->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -57,6 +65,14 @@ body {
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="faq.html">FAQ</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Help
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="https://dineshteli.github.io/whatisweb">What is web ?</a>
+			        </div>
 			      </li>
 			    </ul>
 			  </div>
@@ -130,7 +146,7 @@ body {
 
 					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-4 text-center" data-aos="fade-up">
 						<div class="service-icon pt-5 pb-5">
-							<i class="fa-6x fas fa-laptop-code"></i>
+							<i class="fa-4x fas fa-laptop-code"></i>
 							<div class="p-3 services-text">
 								web designing
 							</div>
@@ -139,7 +155,7 @@ body {
 
 					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-4 text-center" data-aos="fade-up">
 						<div class="service-icon pt-5 pb-5">
-							<i class="fa-6x fas fa-code"></i>
+							<i class="fa-4x fas fa-code"></i>
 							<div class="p-3 services-text">
 								web development
 							</div>
@@ -148,7 +164,7 @@ body {
 
 					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-4 text-center" data-aos="fade-up">
 						<div class="service-icon pt-5 pb-5">
-							<i class="fa-6x fas fa-globe"></i>
+							<i class="fa-4x fas fa-globe"></i>
 							<div class="p-3 services-text">
 								web hosting
 							</div>
@@ -157,7 +173,7 @@ body {
 
 					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-4 text-center" data-aos="fade-up">
 						<div class="service-icon pt-5 pb-5">
-							<i class="fa-6x fas fa-signature"></i>
+							<i class="fa-4x fas fa-signature"></i>
 							<div class="p-3 services-text">
 								domain name
 							</div>
@@ -400,8 +416,8 @@ body {
 
 	<section>
 		  <!-- Swiper -->
-		  <div class="swiper-container pt-5 pb-5">
-		    <div class="swiper-wrapper" data-aos="zoom-in">
+		  <div class="swiper-container pt-5 pb-5" data-aos="fade-up">
+		    <div class="swiper-wrapper">
 		      <div class="swiper-slide"><img src="img/html.png" class="lang-slider-pic"></div>
 		      <div class="swiper-slide"><img src="img/css.png" class="lang-slider-pic"></div>
 		      <div class="swiper-slide"><img src="img/js.png" class="lang-slider-pic"></div>
