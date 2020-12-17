@@ -525,7 +525,7 @@ border: 10px solid #f3f3f3;
 
 
 /*accordion css code*/
-    
+
     .accordion .fa { 
       margin-right: 0.2rem; 
     } 
@@ -537,7 +537,7 @@ border: 10px solid #f3f3f3;
 
     .accordion-border .accordian-button{
       width: 100%;
-      /*background-color: rgba(52, 152, 219,1.0);*/
+      background-color: rgba(236, 240, 241,1.0);
     }
 
     /*.accordian-button:focus , .accordian-button:focus .accordian-heading{
@@ -545,10 +545,7 @@ border: 10px solid #f3f3f3;
       color: white; 
     }*/
 
-    .card-body{
-       background-color: rgba(52, 152, 219,1.0);
-       color: white;
-    }
+ 
 
     .accordian-heading{
       color: black;
@@ -558,10 +555,6 @@ border: 10px solid #f3f3f3;
       float: left;
      /* color: white;*/
     }
-
-
-
-
 
 
 
