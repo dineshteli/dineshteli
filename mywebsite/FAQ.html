@@ -18,21 +18,24 @@
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- content="default" or "black" or "black-translucent"  -->
 
+	<!--stylesheet file link-->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 	<!-- font awesome link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	
-	<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<!-- bs4 css file link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<!-- swiper css link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha256-kGupfJ4zZb4/m0GPPVY0ng7FwSjZm1E0wMWG1aRYbwk=" crossorigin="anonymous" />
 
-	<!--stylesheet file link-->
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- aos css link -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	<!-- font style -->
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
 <style>
 body {
     font-family: 'Baloo Chettan 2', cursive;
@@ -83,14 +86,13 @@ body {
 		<div class="container-fluid">
 			<div class="accordion"> 
 			<div class="accordion" id="accordionExample"> 
-				<div class="card"> 
-					<div class="card-header" id="headingOne"> 
-							<button type="button" class="btn btn-link accordian-button" data-toggle="collapse"
+				<div class="accordion-border"> 
+					
+							<button type="button" class="btn btn-link accordian-button acc-btn-active" data-toggle="collapse"
 								data-target="#collapseOne">
 								<div class="accordian-heading">1. How to start project with us ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div>			 
 							</button>	
-					</div> 
+					
 					<div id="collapseOne" class="collapse show"
 						aria-labelledby="headingOne"
 						data-parent="#accordionExample"> 
@@ -98,20 +100,18 @@ body {
 							<p>
 								like others you just need make registration of your project by providing Domain and Hosting cost or 20% cost of total project.
 							</p> 
-						</div> 
-					</div> 
+						</div>
+					</div>
 				</div> 
-				
-				<div class="card"> 
-					<div class="card-header" id="headingTwo"> 
-						
+				<br/>
+				<div class="accordion-border"> 
+					
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseTwo"> 
 								<div class="accordian-heading">2. Is this a software company ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div>
 							</button> 
 						
-					</div> 
+					
 					<div id="collapseTwo" class="collapse"
 						aria-labelledby="headingTwo"
 						data-parent="#accordionExample"> 
@@ -122,15 +122,14 @@ body {
 						</div> 
 					</div> 
 				</div> 
-
-				<div class="card"> 
-					<div class="card-header" id="headingThree"> 
+				<br/>
+				<div class="accordion-border"> 
+					
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseThree"> 
 								<div class="accordian-heading">3. Is it neccessory to meet out freelancer to deal with us ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div> 
 							</button>
-					</div> 
+					 
 					<div id="collapseThree" class="collapse"
 						aria-labelledby="headingThree"
 						data-parent="#accordionExample"> 
@@ -141,15 +140,14 @@ body {
 						</div> 
 					</div> 
 				</div>
-
-				<div class="card"> 
-					<div class="card-header" id="headingFour"> 
+				<br/>
+				<div class="accordion-border"> 
+					
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseFour"> 
 								<div class="accordian-heading">4. can outside state client contact us for deal ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div> 
 							</button>
-					</div> 
+				 
 					<div id="collapseFour" class="collapse"
 						aria-labelledby="headingFour"
 						data-parent="#accordionExample"> 
@@ -160,15 +158,14 @@ body {
 						</div> 
 					</div> 
 				</div>
-
-				<div class="card"> 
-					<div class="card-header" id="headingFive"> 
+				<br/>
+				<div class="accordion-border"> 
+					
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseFive"> 
 								<div class="accordian-heading">5. Do we generate content for website ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div> 
 							</button>
-					</div> 
+					
 					<div id="collapseFive" class="collapse"
 						aria-labelledby="headingFive"
 						data-parent="#accordionExample"> 
@@ -179,15 +176,14 @@ body {
 						</div> 
 					</div> 
 				</div>
-
-				<div class="card"> 
-					<div class="card-header" id="headingSix"> 
+				<br/>
+				<div class="accordion-border"> 
+					
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseSix"> 
 								<div class="accordian-heading">6. If all are freelancers then what is < mywebsite > ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div> 
 							</button>
-					</div> 
+					
 					<div id="collapseSix" class="collapse"
 						aria-labelledby="headingSix"
 						data-parent="#accordionExample"> 
@@ -198,15 +194,14 @@ body {
 						</div> 
 					</div> 
 				</div>
-
-				<div class="card"> 
-					<div class="card-header" id="headingSeven"> 
+				<br/>
+				<div class="accordion-border"> 
+				
 							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
 								data-target="#collapseSeven"> 
 								<div class="accordian-heading">7. Do you provide any kind of notes to better understand the website ?</div>
-								<div class="accordian-plus-minus"><i class="fa fa-plus"></i></div> 
 							</button>
-					</div> 
+					
 					<div id="collapseSeven" class="collapse"
 						aria-labelledby="headingSeven"
 						data-parent="#accordionExample"> 
@@ -217,12 +212,40 @@ body {
 						</div> 
 					</div> 
 				</div>
+				<br/>
+				<div class="accordion-border">
+				
+							<button type="button" class="btn btn-link collapsed accordian-button" data-toggle="collapse"
+								data-target="#collapseEight"> 
+								<div class="accordian-heading">8. How to contact us ?</div>
+							</button>
+					
+					<div id="collapseEight" class="collapse"
+						aria-labelledby="headingEight"
+						data-parent="#accordionExample"> 
+						<div class="card-body"> 
+							<p> 
+							Its easy.<br/>go to our website and click on contact button on the top and choose contact option in between WhatsApp and call.
+							</p> 
+						</div> 
+					</div> 
+				</div>
 
 			</div> 
 		</div>
 		</div>
 	</section>
 
+
+	<section>
+		<div class="container-fluid">
+			<div class="myaccordion">
+				
+			</div>
+		</div>
+	</section>
+
+	
 
 	<section>
 		  <!-- Swiper -->
@@ -304,16 +327,20 @@ body {
 	
 
 
-	<!-- bs4 js link -->
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+	<!-- font awsome link -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+
+	 <!-- bs4 js link -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 	<!-- swiper js link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha256-NiMdnMv0WBAps3M8mcB7WHzlanETt0rnwMCgg67DgCk=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha256-NiMdnMv0WBAps3M8mcB7WHzlanETt0rnwMCgg67DgCk=" crossorigin="anonymous"></script>
 
-	<script src="customjs.js"></script>
+		 <script src="customjs.js"></script>
 
 	<!-- aos js link -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -325,28 +352,6 @@ body {
 	   <script type="text/javascript">
 	  	$('#loading').fadeOut(2000);
 	  </script>
-
-	<script> 
-		$(document).ready(function() { 
-		
-			// Add minus icon for collapse element which 
-			// is open by default 
-			$(".collapse.show").each(function() { 
-				$(this).prev(".card-header").find(".fa") 
-					.addClass("fa-minus").removeClass("fa-plus"); 
-			}); 
-
-			// Toggle plus minus icon on show hide 
-			// of collapse element 
-			$(".collapse").on('show.bs.collapse', function() { 
-				$(this).prev(".card-header").find(".fa") 
-					.removeClass("fa-plus").addClass("fa-minus"); 
-			}).on('hide.bs.collapse', function() { 
-				$(this).prev(".card-header").find(".fa") 
-					.removeClass("fa-minus").addClass("fa-plus"); 
-			}); 
-		}); 
-	</script>
 
 </body> 
 </html>

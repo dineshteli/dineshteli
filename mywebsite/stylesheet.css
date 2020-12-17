@@ -530,19 +530,37 @@ border: 10px solid #f3f3f3;
       margin-right: 0.2rem; 
     } 
 
-    .accordian-button , .accordian-button:hover{
+    .accordion-border{
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    .accordion-border .accordian-button{
       width: 100%;
+      /*background-color: rgba(52, 152, 219,1.0);*/
+    }
+
+    /*.accordian-button:focus , .accordian-button:focus .accordian-heading{
       background-color: rgba(52, 152, 219,1.0);
-      color: white;
+      color: white; 
+    }*/
+
+    .card-body{
+       background-color: rgba(52, 152, 219,1.0);
+       color: white;
+    }
+
+    .accordian-heading{
+      color: black;
     }
 
     .accordian-heading{
       float: left;
+     /* color: white;*/
     }
 
-    .accordian-plus-minus{
-      float: right;
-    }
+
+
 
 
 
