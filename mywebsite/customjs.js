@@ -34,13 +34,16 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      //  navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       breakpoints: {     
-
-        640: {
+      	300: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+      	640: {
           slidesPerView: 2,
           spaceBetween: 0,
         },

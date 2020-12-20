@@ -3,9 +3,48 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar-color-on-scroll{
-  background-color: black;
-}
+
+
+/*media query for full screen nav-bar*/
+
+		 /* Media Query for Mobile Devices */
+		 /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) { 
+           .navbar-nav {
+			  height: 100vh !important;
+			}
+        } 
+          
+        /* Media Query for low resolution  Tablets, Ipads */
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            .navbar-nav {
+			  height: 100vh !important;
+			}
+        } 
+          
+        /* Media Query for Tablets Ipads portrait mode */
+         /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px){ 
+            .navbar-nav {
+			  height: 100vh !important;
+			}
+        } 
+          
+        /* Media Query for Laptops and Desktops */ 
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px){ 
+           
+        } 
+          
+        /* Media Query for Large screens */
+        /*Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+            
+        } 
+
+
+
 
 *{
 	padding: 0px;
@@ -346,6 +385,11 @@ border: 10px solid #f3f3f3;
 	background-color: rgba(52, 152, 219,1.0);
 }
 
+.go-online{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
 
 /*--------------lang slider------------*/
 .lang-slider-pic{
@@ -360,7 +404,9 @@ border: 10px solid #f3f3f3;
 }
 /*----------------footer----------------*/
 .footer{
-	background-color: #0984e3;          
+  background-color: #0984e3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;         
   bottom: 0;
 }
 
@@ -369,7 +415,7 @@ border: 10px solid #f3f3f3;
 	transition: 0.2s ease;
 }
 
-.footer-links:hover{
+.footer-links:hover , .footer-links:focus{
 	color: black;
 	text-decoration: none;
 }
@@ -378,22 +424,33 @@ border: 10px solid #f3f3f3;
 	color: white;
 	transition: 0.2s ease;
 }
-.footer-social-icon:hover{
+.footer-social-icon:hover , .footer-social-icon:focus{
 	color: black;
 	text-decoration: none;
 }
 
-.wtsapp-options-text{
+.whatisweb:hover a{
+	background-color: #dfe6e9;
+}
+
+.footer-brand:hover{
+	text-decoration: none;
+}
+
+
+.wtsapp-options a{
 	color: black;
+	line-height: 2;
 }
 
-.wtsapp-options-text:hover{
-	color: white;
+.wtsapp-options:hover a{
+	color: black;
+	text-decoration: none;
 }
+
 .wtsapp-options:hover{
-	background-color: #0984e3;
+	background-color: #dfe6e9;
 }
-
 
 /*----------------copyright----------------------*/
 .copyright-text{
@@ -411,6 +468,7 @@ border: 10px solid #f3f3f3;
       text-align: center;
       font-size: 18px;
       background: #fff;
+      cursor: pointer;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -439,24 +497,24 @@ border: 10px solid #f3f3f3;
 	font-size: 1.3rem;/*em , rem , px , % , vw*/
 }
 
+.services-col-div{
+	overflow: hidden;
+}
+
 
 .service-icon{
   color: white;
   border-radius: 5px;
-  border: 1px solid #c8d6e5;
   transition: 0.1s ease;
 }
 
 .service-icon:hover{
-  border: 1px solid black;
   color: black;
   cursor: pointer;
   background-color: white;
   transition: 0.1s ease;
-}
-
-.service-icon:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+  border-radius: 5px;
 }
 
 
