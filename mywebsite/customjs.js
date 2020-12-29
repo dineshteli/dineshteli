@@ -14,9 +14,10 @@
                       $("nav").removeClass("navbar-color-on-scroll");
                     $("nav").addClass('navbar-light');
                     $("nav").addClass('bg-light');
-                      
+                        
                   }
               });
+
 
 
 		// <!-- Initialize Swiper -->
@@ -80,4 +81,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
- 

@@ -44,7 +44,10 @@ body {
 </head>
 <body>
 
-	<div  id="loading"></div>
+	<div class="load-wrapper">
+    <div class="loader"></div>
+  </div>
+
 
 	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
 		<div class="container">
@@ -63,6 +66,14 @@ body {
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="faq.html">FAQ</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Help
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="aboutweb.html">about website</a>
+			        </div>
 			      </li>
 			    </ul>
 			  </div>
@@ -234,8 +245,8 @@ body {
 							    </a>
 								  
 								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								    <li class="whatisweb">
-								  		<a class="dropdown-item" href="https://dineshteli.github.io/whatisweb">What is web ?</a>
+								    <li class="aboutweb">
+								  		<a class="dropdown-item" href="aboutweb.html">about website</a>
 								  	</li>
 								  </div>
 							</div>
@@ -293,9 +304,13 @@ body {
 	    AOS.init();
 	  </script>
 
-	   <script type="text/javascript">
-	  	$('#loading').fadeOut(2000);
-	  </script>
+  <script type="text/javascript">
+  	$(document).ready(function()
+{
+   // executes when HTML-Document is loaded and DOM is ready
+   $(".load-wrapper").fadeOut("slow");
+});
+  </script>
 	
 </body>
 </html>

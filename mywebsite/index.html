@@ -45,10 +45,12 @@ body {
 </head>
 <body>
 
-	<div  id="loading"></div>
+	<div class="load-wrapper">
+    <div class="loader"></div>
+  </div>
 	 
 
-	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 		<div class="container">
 			  <a class="navbar-brand" href="index.html">< MyWebsite ></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +68,14 @@ body {
 			      <li class="nav-item">
 			        <a class="nav-link" href="faq.html">FAQ</a>
 			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Help
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="aboutweb.html">about website</a>
+			        </div>
+			      </li>
 			    </ul>
 			  </div>
 		</div>
@@ -77,8 +87,10 @@ body {
 	</div>
 
 	<section class="context">
+
 		<div class="container-fluid banner">
-			<div class="d-flex justify-content-center align-items-center">
+
+			<!-- <div class="d-flex justify-content-center align-items-center"> -->
 				
 				<div class="text-center all-top">
 					<h2 class="pb-4">DINESH SURESH TELI</h2>
@@ -107,7 +119,7 @@ body {
 					 	</ul>
 					</div>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
 	</section>
 
@@ -453,8 +465,8 @@ body {
 							    </a>
 								  
 								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								  	<li class="whatisweb">
-								  		<a class="dropdown-item" href="https://dineshteli.github.io/whatisweb">What is web ?</a>
+								  	<li class="aboutweb">
+								  		<a class="dropdown-item" href="aboutweb.html">about website</a>
 								  	</li>
 								  </div>
 							</div>
@@ -528,8 +540,12 @@ body {
 	  </script>
 
 	  <script type="text/javascript">
-	  	$('#loading').fadeOut(2000);
-	  </script>
+  	$(document).ready(function()
+{
+   // executes when HTML-Document is loaded and DOM is ready
+   $(".load-wrapper").fadeOut("slow");
+});
+  </script>
 	
 </body>
 </html>

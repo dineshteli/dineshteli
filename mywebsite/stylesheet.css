@@ -4,6 +4,15 @@ html {
 }
 
 
+.navbar-color-on-scroll{
+	background-color: black;
+}
+
+.navbar-nav .dropdown-menu .active , .navbar-nav .dropdown-menu .dropdown-item:focus{
+	color: black;
+	background-color: #ecf0f1;
+}
+
 
 /*media query for full screen nav-bar*/
 
@@ -13,6 +22,22 @@ html {
            .navbar-nav {
 			  height: 100vh !important;
 			}
+
+			.nav-link{
+				line-height: 2rem;
+			}
+			.navbar-nav{
+				padding-top: 10%;
+			}
+			.nav-item{
+				border-radius: 5px;
+	        	border:1px solid transparent;
+	        	transition: 0.2s ease;
+	        	text-align: center;
+        	}
+	        .navbar-nav .active{
+	        border: 1px solid #dfe6e9;	
+	        }
         } 
           
         /* Media Query for low resolution  Tablets, Ipads */
@@ -21,6 +46,21 @@ html {
             .navbar-nav {
 			  height: 100vh !important;
 			}
+			.nav-link{
+				line-height: 2rem;
+			}
+			.navbar-nav{
+				padding-top: 10%;
+			}
+			.nav-item{
+        	border-radius: 5px;
+	        	border:1px solid transparent;
+	        	transition: 0.2s ease;
+	        	text-align: center;
+        	}
+	        .navbar-nav .active{
+	        border: 1px solid #dfe6e9;	
+	        }
         } 
           
         /* Media Query for Tablets Ipads portrait mode */
@@ -29,6 +69,21 @@ html {
             .navbar-nav {
 			  height: 100vh !important;
 			}
+			.nav-link{
+				line-height: 2rem;
+			}
+			.navbar-nav{
+				padding-top: 10%;
+			}
+			.nav-item{
+        	border-radius: 5px;
+	        	border:1px solid transparent;
+	        	transition: 0.2s ease;
+	        	text-align: center;
+       		}
+	        .navbar-nav .active{
+	        border: 1px solid #dfe6e9;	
+	        }
         } 
           
         /* Media Query for Laptops and Desktops */ 
@@ -41,8 +96,7 @@ html {
         /*Extra large devices (large desktops, 1200px and up) */
         @media (min-width: 1200px) { 
             
-        } 
-
+        }
 
 
 
@@ -51,41 +105,22 @@ html {
 	margin: 0px;
 }
 
-       body { 
-            animation: fadeInAnimation ease 3s; 
-            animation-iteration-count: 1; 
-            animation-fill-mode: forwards; 
-        } 
-        @keyframes fadeInAnimation { 
-            0% { 
-                opacity: 0; 
-            } 
-            100% { 
-                opacity: 1; 
-            } 
-        }
 
 
-#loading {
-position: fixed;
-width: 4rem;
-height: 4rem;
+.loader {
+  border: 0.5rem solid rgba(0, 0, 0,0);
 
-z-index: 9999;
-
-border: 10px solid #f3f3f3;
+  border-top: 0.5rem solid;
+  border-bottom: 0.5rem solid;
+  
+  border-image-slice: 1;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border-top: 10px solid rgba(52, 152, 219,1.0);;
-  border-bottom: 10px solid rgba(52, 152, 219,1.0);
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
 
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
-
-   -webkit-animation: spin 1s linear infinite;
-  animation: spin 1 s linear infinite;
 }
-
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -95,6 +130,19 @@ border: 10px solid #f3f3f3;
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.load-wrapper{
+	  z-index: 9999;
+    justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 
@@ -241,7 +289,7 @@ border: 10px solid #f3f3f3;
     }
 }
 
-/*about page*/
+/*aboutme page*/
 
 .myskill{
   background-color: #f5f6fa;
@@ -291,6 +339,7 @@ border: 10px solid #f3f3f3;
 	display: -o-flex;
 	justify-content: center;
 	align-items: center;
+/*	padding-top: 10rem;*/
 	flex-flow: column;
 	background-attachment: fixed;
 }
@@ -312,7 +361,7 @@ border: 10px solid #f3f3f3;
     animation-direction: alternate;
 }
 
-.contactbtn:hover{
+.contactbtn:hover , .contactbtn:focus{
 	-webkit-animation: bgcolor  paused;
   background-color: white;
 	color: black;
@@ -429,9 +478,6 @@ border: 10px solid #f3f3f3;
 	text-decoration: none;
 }
 
-.whatisweb:hover a{
-	background-color: #dfe6e9;
-}
 
 .footer-brand:hover{
 	text-decoration: none;
@@ -603,8 +649,6 @@ border: 10px solid #f3f3f3;
       color: white; 
     }*/
 
- 
-
     .accordian-heading{
       color: black;
     }
@@ -613,6 +657,24 @@ border: 10px solid #f3f3f3;
       float: left;
      /* color: white;*/
     }
+
+    /********* about website*********/
+
+    .aboutweb:hover a{
+    	background-color: #dfe6e9;
+    	color: black;
+    }
+
+    .aboutweb-title{
+    	padding: 1rem 0 1rem 0;
+	color: black;
+    }
+
+    .div-color{
+    	background-color: rgba(236, 240, 241,0.7);
+    }
+
+
 
 
 
