@@ -434,11 +434,6 @@ html {
 	background-color: rgba(52, 152, 219,1.0);
 }
 
-.go-online{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
 
 /*--------------lang slider------------*/
 .lang-slider-pic{
@@ -448,7 +443,7 @@ html {
 
 
 .quality-details , .online-details{
-	font-size: 1.5rem;
+	font-size: 1.3rem;
   line-height: 2rem;
 }
 /*----------------footer----------------*/
@@ -545,22 +540,6 @@ html {
 
 .services-col-div{
 	overflow: hidden;
-}
-
-
-.service-icon{
-  color: white;
-  border-radius: 5px;
-  transition: 0.1s ease;
-}
-
-.service-icon:hover{
-  color: black;
-  cursor: pointer;
-  background-color: white;
-  transition: 0.1s ease;
-  transform: scale(1.1);
-  border-radius: 5px;
 }
 
 
