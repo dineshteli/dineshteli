@@ -563,7 +563,17 @@ html {
   background-color: rgba(236, 240, 241,0.2);
 }
 
-.democard:hover .webname{
+.webname1{
+  transition: 0.1s ease;
+  color: white;
+  background-color: rgba(52, 152, 219,1.0);
+}
+
+.webdemo1:hover a {
+  text-decoration: none;
+}
+
+.democard:hover .webname , .democard:hover .webname1{
   color: white;
   background-color: black;
   cursor: pointer;
