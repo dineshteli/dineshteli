@@ -291,10 +291,29 @@ html {
 
 /*aboutme page*/
 
-.myskill{
+.myaim{
   background-color: #f5f6fa;
 }
 
+.webname1{
+  transition: 0.1s ease;
+  color: white;
+  background-color: rgba(52, 152, 219,1.0);
+}
+
+.webdemo1{
+  background-color: #f5f6fa;
+}
+
+.webdemo1:hover a {
+  text-decoration: none;
+}
+
+
+/*faq*/
+.faq{
+	background-color: #f5f6fa;
+}
 
 
   /*---------------------------------------------- go to top button----------------------------------------------------*/
@@ -431,9 +450,136 @@ html {
 }
 
 .services-div , .go-online , .webdemo{
-	background-color: rgba(52, 152, 219,1.0);
+	background-color: rgba(9, 132, 227,1.0);
 }
 
+
+/*------------banner marquee css code-------------*/
+/*.marquee{
+	background-color: red;
+	width: 100%;
+	overflow: hidden;
+	color:white;
+	bottom: 0;
+	position: absolute;
+}
+	
+
+.marquee div {     
+            font-size: 1.2rem;
+            margin: 0;
+            line-height: 2.5rem;
+            width: auto;
+            background-color: green;
+            overflow: auto;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+
+.marquee div span{
+	display: inline-block;
+}*/
+
+/* Make it a marquee */
+.marquee {
+    width:100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    background-color: red;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.marquee div {
+    display: inline-block;
+    font-size: 1.2rem;
+    animation-name: marquee;
+    animation-duration: 30s;
+    line-height: 2.5rem;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding-right: 5rem;
+}
+
+.marquee:hover .pause{
+	
+	animation-play-state: paused;
+}
+
+
+
+
+/* Make it move */
+
+
+ @-moz-keyframes marquee {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes marquee {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes marquee {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
 
 /*--------------lang slider------------*/
 .lang-slider-pic{
@@ -448,11 +594,11 @@ html {
 }
 /*----------------footer----------------*/
 .footer{
-  background-color: #0984e3;
-  padding-top: 3rem;
-  padding-bottom: 3rem;         
-  bottom: 0;
+  background-color: black;
+  padding-top: ;
+  padding-bottom: 	;         
 }
+
 
 .footer-links{
 	color: white;
@@ -460,8 +606,8 @@ html {
 }
 
 .footer-links:hover , .footer-links:focus{
-	color: black;
-	text-decoration: none;
+	color: white;
+	text-decoration: underline;
 }
 
 .footer-social-icon{
@@ -495,7 +641,7 @@ html {
 
 /*----------------copyright----------------------*/
 .copyright-text{
-	background-color: #3498db;
+	background-color: black;
 	color: white;         
 }
 
@@ -563,15 +709,6 @@ html {
   background-color: rgba(236, 240, 241,0.2);
 }
 
-.webname1{
-  transition: 0.1s ease;
-  color: white;
-  background-color: rgba(52, 152, 219,1.0);
-}
-
-.webdemo1:hover a {
-  text-decoration: none;
-}
 
 .democard:hover .webname , .democard:hover .webname1{
   color: white;
@@ -603,7 +740,7 @@ html {
 
 ::-webkit-scrollbar
 {
-	width: 10px;
+	width: 11px;
 	background-color: #F5F5F5;
   transition: 0.3s;
 }
@@ -649,7 +786,7 @@ html {
 
     /********* about website*********/
 
-    .aboutweb:hover a{
+    .aboutweb a:hover{
     	background-color: #dfe6e9;
     	color: black;
     }
@@ -660,7 +797,7 @@ html {
     }
 
     .div-color{
-    	background-color: rgba(236, 240, 241,0.7);
+    	background-color: #f5f6fa;
     }
 
 
