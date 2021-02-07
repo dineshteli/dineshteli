@@ -101,9 +101,9 @@ body {
 					</h3>
 					
 					 <div class="dropdown w-100"> 
-					    <a href="#" class="dropdown-toggle contactbtn" id="dropdownMenuButton" data-toggle="dropdown" data-aos="zoom-in">
+					    <!-- <a href="#" class="dropdown-toggle contactbtn" id="dropdownMenuButton" data-toggle="dropdown" data-aos="zoom-in">
 					    	contact me
-					    </a>
+					    </a> -->
 						  
 						 <ul class="dropdown-menu text-center contactbtnlink">
 						 	<span>
@@ -119,7 +119,8 @@ body {
 						 	</span>
 					 	</ul>
 					</div>
-				</div>
+				</div>	
+
 
 				<div class="all-top marquee">
 					<div class="pause">
@@ -132,6 +133,8 @@ body {
 			<!-- </div> -->
 		</div>
 	</section>
+
+
 
 	<div class="area" >
 			            <ul class="circles">
@@ -197,13 +200,104 @@ body {
 			</div>
 	</section>
 
+	<section id="findCost">
+		<div class="section-title">
+			<h1 class="text-center">check your cost</h1>
+		</div>
+
+		<div class="container pb-3" data-aos="fade-up">
+			
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">service name</th>
+						<th scope="col">select extension</th>
+						<th scope="col">select duration</th>
+     					<th scope="col">your cost</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr class="align-middle">
+						<td class="align-middle">Domain</td>
+	      				<td class="align-middle">
+	      					<form>
+	      						   <div class="form-group align-middle">
+								    <label for="exampleFormControlSelect1"></label>
+								    <select class="form-control align-middle" id="domainext">
+								    	<option>- select -</option>
+								      <option>.in</option>
+								      <option>.com</option>
+								    </select>
+								  </div>
+	      					</form>
+	      				</td>
+	      				<td>
+      						<form>
+	      						   <div class="form-group">
+								    <label for="exampleFormControlSelect1"></label>
+								    <select class="form-control align-middle" id="domainduration">
+								    	<option>- select -</option>
+								      <option>1 year</option>
+								      <option>2 years</option>
+								      <option>3 years</option>
+								    </select>
+								  </div>
+	      					</form>
+      					</td>
+	      				<td class="text-center align-middle">
+	      					<div id="setdomaincost">0</div>
+	      				</td>
+					</tr>
+					<tr>
+						<td class="align-middle">Hosting</td>
+      					<td class="align-middle text-center">
+	      					<label class="text-danger">none</label>
+	      				</td>
+	      				<td class="text-center">
+      						<form>
+	      						   <div class="form-group">
+								    <label for="exampleFormControlSelect1"></label>
+								    <select class="form-control" id="hostingduration">
+								    <option>- select -</option>
+								      <option>1 month</option>
+								      <option>12 months</option>
+								      <option>24 months</option>
+								      <option>48 months</option>
+								    </select>
+								  </div>
+	      					</form>
+      					</td>
+      					<td class="align-middle text-center">
+	      					<div id="sethostingcost">0</div>
+	      				</td>
+					</tr>
+
+					<tr class="align-middle text-center">
+						<td colspan="3">Total</td>
+						<td class="bg-success text-white">
+							<div id="setTotalcost">0</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="text-center costdiv pb-xl-5 pt-lg-5 pb-lg-5 pt-md-5 pb-md-5 p-5">
+				
+					<button class="costbtn" id="showcost" onclick = "findcost();">Check</button>
+					<button class="costbtn" id="cleardata" onclick = "cleardata();">clear</button>
+
+			</div>
+		</div>
+	</section>
+
 
 	<section id="quality">
-		<div class="section-title">
+		<div class="section-title text-white">
 			<h1 class="text-center">Quality of work</h1>
 		</div>
 
-		<div class="container pb-5" data-aos="fade-up">
+		<div class="container pb-xl-5 pb-lg-5 pb-md-5 pb-5 text-white" data-aos="fade-up">
 			<div class="row quality-details">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 					<div>1. Presence of mind</div>
@@ -225,8 +319,8 @@ body {
 	</section>
 
 	<!-- online banner -->
-	<section id="online" class="go-online pt-5 pb-5 text-white">
-			<div class="container" data-aos="fade-up">	
+	<section id="online" class="go-online pt-5 pb-5">
+			<div class="container pt-xl-5 pb-xl-5 pt-lg-5 pb-lg-5 pt-md-5 pb-md-5" data-aos="fade-up">	
 					<div class="pb-4">
 						<h1>Do you want to spread your business on online ??</h1> 
 						<h2>yes!! then</h2> 
@@ -243,7 +337,7 @@ body {
 	</section>
 
 
-	<section id="advOfWeb" class="advantages-div">
+	<section id="advOfWeb" class="advantages-div text-white">
 			<div class="section-title">
 				<h1 class="text-center">Advantages of website</h1>
 			</div>
@@ -349,11 +443,11 @@ body {
 
 	<section id="webdemo" class="webdemo">
 		<div class="section-title">
-				<h1 class="text-center text-white">Demo websites</h1>
+				<h1 class="text-center">Demo websites</h1>
 		</div>
 			<div class="container-fluid pb-5">
 				<div class="container">
-					<div class="text-white pb-5" data-aos="fade-up">
+					<div class="pb-5" data-aos="fade-up">
 						<h2>Note:</h2>
 						In the demo website cost, Domain and Hosting cost of 1 year is included. you don't have to pay extra cost for Domain and Hosting for 1 year.
 					</div>
@@ -387,7 +481,7 @@ body {
 
 						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 justify-content-center d-flex align-items-center text-center pb-4" data-aos="zoom-in">
 							<a href="about.html#webdemo" title="more demo">														
-									<span><i class="fa-4x fas fa-arrow-circle-right text-white"></i></span>	
+									<span><i class="fa-4x fas fa-arrow-circle-right text-dark"></i></span>	
 							</a>					
 						</div>
 					</div>
@@ -447,11 +541,10 @@ body {
 						</div>
 
 
-						<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center align-self-center pt-5 pb-5">
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+							<div class="text-center pt-5 pb-5">
 							<h1><a href="#" class="text-white footer-brand">< dineshteli ></a></h1>
-
-							<div class="text-center">
-
+			
 							    <ul class="dropdown-menu text-center">
 							      <li class="wtsapp-options"><a href="whatsapp://send?phone=918108485581&text=hii, dinesh i tried to contact you from whatsapp application">application</a></li>
 							      <li class="wtsapp-options"><a href="https://api.whatsapp.com/send?phone=918108485581&text=hii, dinesh i tried to contact you from whatsapp website">website</a></li>   
