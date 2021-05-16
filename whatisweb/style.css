@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+  .backtop {
+    position: fixed;
+    left: auto;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    overflow: hidden;
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 999999;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem;
+    opacity: 1;
+    display: none;
+  }
+
+  
+  .loader {
+  border: 0.5rem solid rgba(0, 0, 0,0);
+  border-top: 0.5rem solid;
+  border-image-slice: 1;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.load-wrapper{
+	  z-index: 9999;
+    justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.web-live{
+  font-size: 2rem;
+}
+
+.web-live3{
+  font-size: 1.5rem;
+}
+
+.first{
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-call , .contact-mail{
+  color: black;
+}
+
+.contact-call:hover , .contact-mail:hover{
+  color: black;
+  text-decoration: none;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .first{
+    height: 85vh;
+  }
+}
+
+.background1{
+    background-image: url("img/8.jpg");
+}
+
+.background2{
+    background-image: url("img/2.jpg");
+}
+
+.background3{
+    background-image: url("img/1.png");
+}
+
+.background4{
+    background-image: url("img/3.jpg");
+}
+
+.background5{
+    background-image: url("img/5.jpg");
+}
+
+.background6{
+    background-image: url("img/7.jpg");
+}
+
+.background7{
+    background-image: url("img/4.jpg");
+}
+
+.footer, .copyright-text{
+    background-color: black;
+}
+
+.footer-links{
+    color: gray;
+    transition: .2s ease;
+}
+
+.footer-links:hover , .bottom-logo:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-logo{
+    color:white;
+    transition: .2s ease;
+}
+
+/* edit scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
