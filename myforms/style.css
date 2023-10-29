@@ -1,0 +1,97 @@
+.top-banner{
+	background-image: url("images/work-filter.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
+	
+}
+
+.enjoy-banner{
+	background-image: url("images/enjoy-job.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
+	color: white;
+}
+
+/*img{
+	filter: brightness(20%);
+	width: 100%;
+	height: 100vh;
+}*/
+
+.banner-text{
+	text-align: center;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+
+.middle{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+
+.stop-text-spin{
+    position: absolute;
+}
+
+.rating-star-code{
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.rating-loader-food {
+  border: 16px solid orange;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: gray;
+    transition: .2s ease;
+}
+.footer-links:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links-header{
+   text-decoration: none;
+    color: gray;
+}
+
+.copyright{
+    text-decoration: none;
+    color: gray;
+}
+
+.copyright:hover{
+     text-decoration: none;
+     color: gray;
+}
+
+.coming-soon{
+	width: 100$;
+	height: 100vh;
+}
